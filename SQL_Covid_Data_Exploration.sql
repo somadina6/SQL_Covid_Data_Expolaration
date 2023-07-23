@@ -1,14 +1,11 @@
-
---SELECT * 
---FROM CovidDeaths
---ORDER BY 3,4
-
-
---SELECT * 
---FROM CovidVaccination
+/* 
+I imported the data from https://ourworldindata.org/covid-deaths 
+and divided it into two tables (CovidDeaths & Covidvaccination)
+This is a quick data exploration using only T-SQL
+*/
 
 
--- Select the data touse
+-- Select the data to use
 SELECT location, date, total_cases, new_cases, total_deaths, population 
 FROM CovidDeaths
 ORDER BY 1,2
